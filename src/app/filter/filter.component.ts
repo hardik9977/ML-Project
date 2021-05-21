@@ -45,7 +45,6 @@ export class FilterComponent implements OnInit {
       event.target.parentElement.parentElement
         .querySelectorAll('.btn')
         .forEach((ele) => {
-          console.log(ele);
           ele.querySelector('p').classList.remove('active');
         });
       event.target.className = 'active';
@@ -65,7 +64,6 @@ export class FilterComponent implements OnInit {
       event.target.parentElement.parentElement
         .querySelectorAll('.btn')
         .forEach((ele) => {
-          console.log(ele);
           ele.querySelector('p').classList.remove('active');
         });
       event.target.className = 'active';
@@ -84,7 +82,6 @@ export class FilterComponent implements OnInit {
       event.target.parentElement.parentElement
         .querySelectorAll('.btn')
         .forEach((ele) => {
-          console.log(ele);
           ele.querySelector('p').classList.remove('active');
         });
       event.target.className = 'active';
