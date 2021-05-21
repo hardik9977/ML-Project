@@ -1,0 +1,26 @@
+<div class="main-container">
+  <div class="header">
+    <p>SpaceX Launch Programs</p>
+  </div>
+  <div class="container">
+    <div class="filter-col">
+      <app-filter (yearClick) = filterByYear($event) 
+                  (lounchClick) = filterByLounch($event)
+                  (landingClick) = filterByLanding($event)></app-filter>
+    </div>
+    <div class="lounch-col">
+        <div>
+          <app-lounches [lounches] = 'lounches'></app-lounches>
+        </div>
+        <div class="no-data" *ngIf= 'lounches.length === 0'>
+          <p>No data found</p>
+        </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p><b>Developed by</b> Hardik Talpada</p>
+  </div>
+</div>
+<div class="overlay" *ngIf = "isLoading">
+  <app-spinner></app-spinner>
+</div>

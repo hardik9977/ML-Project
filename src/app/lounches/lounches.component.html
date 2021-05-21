@@ -1,0 +1,41 @@
+<div class="main-container">
+    <div class="lounch-container" *ngFor="let lounch of lounches">
+        <div class="container-box">
+          <div class="img-container">
+            <img width="100%" height="100%" [src]="lounch.links.mission_patch" alt="No Img available" />
+          </div>
+          <p class="mission-name">{{ lounch.mission_name }} # {{ lounch.flight_number }}</p>
+          <p class="id-lable">Mission Ids:</p>
+              <ul class="ids-list">
+                  <li *ngFor='let id of lounch.mission_id'>{{id}}</li>
+              </ul>
+          <div class="deatils-conatiner">
+              <div class="deatils-lable">
+                  <p>Lounch Year:</p>
+              </div>
+              <div class="deatils">
+                  <p>{{ lounch.launch_year }}</p>
+              </div>
+          </div>
+      
+          <div class="deatils-conatiner">
+              <div class="deatils-lable">
+                  <p>Successful Launch: </p>
+              </div>
+              <div class="deatils">
+                  <p>{{ lounch.launch_success }}</p>
+              </div>
+          </div>
+      
+          <div class="deatils-conatiner">
+              <div class="deatils-lable">
+                  <p>Successful Landing: </p>
+              </div>
+              <div  class="deatils">
+                  <p>{{ lounch.upcoming }}</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+</div>

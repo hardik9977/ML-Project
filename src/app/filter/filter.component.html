@@ -1,0 +1,26 @@
+<div class="filter-container">
+    <p class="title">Filters</p>
+    <div>
+        <p class="filter-category">Launch Year</p>
+        <hr>
+        <div>
+            <div class="btn" *ngFor="let year of years" (click)="searchByYear(year, $event)">
+                <p>{{year}}</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="filter-category">Successful Launch</p>
+        <hr>
+        <div class="btn" *ngFor="let option of options" (click)="searchByLaunch(option, $event)">
+            <p>{{option}}</p>
+        </div>
+    </div>
+    <div>
+        <p class="filter-category">Successful Landing</p>
+        <hr>
+        <div class="btn" *ngFor="let option of options" (click)="searchByLanding(option, $event)">
+            <p>{{option}}</p>
+        </div>
+    </div>
+</div>

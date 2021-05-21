@@ -1,0 +1,44 @@
+.filter-container {
+  background-color: white;
+  padding: 5px 8px;
+}
+
+.filter-container > div {
+    padding: 10px 0px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.filter-category{
+    text-align: center;
+    padding: 3px;
+}
+
+.filter-category + hr {
+    width: 55%;
+    margin: auto;
+    background-color: #e3dfe1;
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.btn p {
+    cursor: pointer;
+    background-color: #c5e09b;
+    width: min-content;
+    margin: 5px auto;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.active  {
+    background-color: #7cba01 !important;
+}
